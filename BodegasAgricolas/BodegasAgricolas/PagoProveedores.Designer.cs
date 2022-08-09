@@ -143,11 +143,12 @@ namespace BodegasAgricolas
             // lbfecha
             // 
             this.lbfecha.AutoSize = true;
-            this.lbfecha.Location = new System.Drawing.Point(886, 9);
+            this.lbfecha.Location = new System.Drawing.Point(908, 9);
             this.lbfecha.Name = "lbfecha";
             this.lbfecha.Size = new System.Drawing.Size(38, 15);
             this.lbfecha.TabIndex = 9;
             this.lbfecha.Text = "Fecha";
+            this.lbfecha.Click += new System.EventHandler(this.lbfecha_Click);
             // 
             // label8
             // 
@@ -182,6 +183,7 @@ namespace BodegasAgricolas
             // 
             // tabla
             // 
+            this.tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabla.Location = new System.Drawing.Point(32, 289);
             this.tabla.Name = "tabla";

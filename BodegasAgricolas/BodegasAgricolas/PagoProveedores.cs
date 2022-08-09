@@ -27,7 +27,7 @@ namespace BodegasAgricolas
 
         private void PagoProveedores_Load(object sender, EventArgs e)
         {
-
+            lbfecha.Text = DateTime.Now.Date.ToString("yyyyMMdd");
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -57,26 +57,38 @@ namespace BodegasAgricolas
         private void btnagregar_Click(object sender, EventArgs e)
         {
             conexion con = new conexion();
-            
+            int cantidad, precio;
+            cantidad = int.Parse(txtcantidad.Text);
+            precio = int.Parse(txtprecio.Text);
 
             string sql = "insert into compras_detalle values('"+ txtndocumento.Text +  "','"+ txtcproducto.Text +"',"+ txtcantidad.Text+"," + txtprecio.Text +",'"+ txtbodega.Text +"')";
             con.IDU(sql);
 
            string sql2 = "select * from compras_detalle where documento_compraenca = '" + txtndocumento.Text +"'";
             tabla.DataSource = con.Busqueda(sql2);
+            txttotal.Text = (cantidad * precio).ToString();
 
         }
 
         private void btntotal_Click(object sender, EventArgs e)
         {
-            int suma = 0;   
+            int  total = 0;   
             foreach (DataGridViewRow row in tabla.Rows)
             {
-                if (row.Cells["total_compraenca"].Value != null)
-                    suma += (Int32)row.Cells["total_compraenca"].Value;
-                    txttotal.Text = suma.ToString();
+                if (row.Cells["cantidad_compradet"].Value != null)
+                    total += ((Int32)row.Cells["cantidad_compradet"].Value) * ((Int32)row.Cells["costo_compradet"].Value);
+                  
             }
-            
+
+           
+
+            txttotal.Text = total.ToString();
+
+            string sql = "Update compras_encabezado Set total_compraenca = " + total + " where documento_compraenca = '"+ txtndocumento.Text +"'";
+            conexion con = new conexion();
+            con.IDU(sql);
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -86,6 +98,11 @@ namespace BodegasAgricolas
 
             string sql = "insert into compras_encabezado values('" + txtndocumento.Text + "','" + txtcodigo.Text + "','" + DateTime.Now.Date.ToString("yyyyMMdd") + "'," + 0 + ",'" + 1 + "')";
             con.IDU(sql);
+        }
+
+        private void lbfecha_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
