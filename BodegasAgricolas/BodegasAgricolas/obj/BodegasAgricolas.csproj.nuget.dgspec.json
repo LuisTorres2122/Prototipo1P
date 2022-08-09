@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\1p\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj": {}
+    "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\Prototipo1P\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\1p\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj": {
+    "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\Prototipo1P\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\1p\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj",
+        "projectUniqueName": "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\Prototipo1P\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj",
         "projectName": "BodegasAgricolas",
-        "projectPath": "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\1p\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj",
+        "projectPath": "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\Prototipo1P\\BodegasAgricolas\\BodegasAgricolas\\BodegasAgricolas.csproj",
         "packagesPath": "C:\\Users\\luist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\1p\\BodegasAgricolas\\BodegasAgricolas\\obj\\",
+        "outputPath": "C:\\Users\\luist\\OneDrive\\Universidad\\8semestre\\Analisis2\\Prototipo1P\\BodegasAgricolas\\BodegasAgricolas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
