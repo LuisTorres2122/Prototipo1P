@@ -27,7 +27,7 @@ namespace BodegasAgricolas
 
         private void PagoProveedores_Load(object sender, EventArgs e)
         {
-            lbfecha.Text = DateTime.Now.Date.ToString("yyyyMMdd");
+            lbfecha.Text = DateTime.Now.Date.ToString("yyyy/MM/dd");
         }
 
         private void label4_Click(object sender, EventArgs e)
