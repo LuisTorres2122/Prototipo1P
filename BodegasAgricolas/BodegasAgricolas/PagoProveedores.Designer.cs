@@ -328,7 +328,7 @@ namespace BodegasAgricolas
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PagoProveedores";
-            this.Text = "PagoProveedores";
+            this.Text = "Luis Torres 0901-19-15851";
             this.Load += new System.EventHandler(this.PagoProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
             this.groupBox1.ResumeLayout(false);
