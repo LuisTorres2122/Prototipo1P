@@ -98,6 +98,8 @@ namespace BodegasAgricolas
             con.IDU(sql);
             MessageBox.Show("El total a pagar a el proveedor: "+txtnombre+" Es de: Q"+txttotal);
 
+            crearPDF();
+
 
         }
 
@@ -117,6 +119,10 @@ namespace BodegasAgricolas
 
         private void crearPDF()
         {
+            try
+            {
+
+           
             PdfWriter pdfWriter = new PdfWriter("Reporte_proveedor.pdf");
             PdfDocument pdf = new PdfDocument(pdfWriter);
             // 1 pulgada = 72 pt (8 1/2 x 11) (8.5*72) (612x792)
@@ -162,8 +168,13 @@ namespace BodegasAgricolas
 
             documento.Add(tabla);
             documento.Close();
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(""+e);
+            }
 
-            
+
         }
     }
 }
