@@ -150,7 +150,7 @@ namespace BodegasAgricolas
             // 
             this.lbfecha.AutoSize = true;
             this.lbfecha.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbfecha.Location = new System.Drawing.Point(892, 9);
+            this.lbfecha.Location = new System.Drawing.Point(860, 9);
             this.lbfecha.Name = "lbfecha";
             this.lbfecha.Size = new System.Drawing.Size(76, 29);
             this.lbfecha.TabIndex = 9;
@@ -308,7 +308,7 @@ namespace BodegasAgricolas
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1018, 509);
+            this.ClientSize = new System.Drawing.Size(1065, 509);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btntotal);
             this.Controls.Add(this.button1);
