@@ -26,7 +26,7 @@ namespace BodegasAgricolas
             contraseña = txtcontraseña.Text;
             conexion con = new conexion();
             Menu m = new Menu();
-            string sql = "select * from usuario where usuario = '" + usuario + "'";
+            string sql = "select * from login where usuario = '" + usuario + "'";
 
             resultado = con.buscar(sql, columna);
 
