@@ -136,9 +136,9 @@ namespace BodegasAgricolas
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(28, 101);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 15);
+            this.label7.Size = new System.Drawing.Size(38, 15);
             this.label7.TabIndex = 8;
-            this.label7.Text = "precio";
+            this.label7.Text = "Costo";
             // 
             // lbfecha
             // 

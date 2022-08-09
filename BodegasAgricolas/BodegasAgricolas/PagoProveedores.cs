@@ -66,7 +66,7 @@ namespace BodegasAgricolas
 
            string sql2 = "select * from compras_detalle where documento_compraenca = '" + txtndocumento.Text +"'";
             tabla.DataSource = con.Busqueda(sql2);
-            txttotal.Text = (cantidad * precio).ToString();
+            
 
         }
 
@@ -87,6 +87,7 @@ namespace BodegasAgricolas
             string sql = "Update compras_encabezado Set total_compraenca = " + total + " where documento_compraenca = '"+ txtndocumento.Text +"'";
             conexion con = new conexion();
             con.IDU(sql);
+            MessageBox.Show("El total a pagar a el proveedor: "+txtnombre+" Es de: Q"+txttotal);
 
 
         }
